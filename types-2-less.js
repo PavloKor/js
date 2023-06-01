@@ -43,6 +43,7 @@ user2.age = 23;
 // user2['gender'] = 'male'; // Старий варіант, використовуємо коротший і легший
 user2.gender = 'male';
 console.log(user2);
+console.log(typeof user2); // object
 
 // Big Int
 const bigInt = 99999999999999999999999999999999999999999n;
@@ -51,6 +52,7 @@ console.log(99999999999999999999999999999999999999999)
 console.log(Number.MAX_SAFE_INTEGER);
 console.log(bigInt);
 console.log(bigInt2);
+console.log(typeof bigInt); // bigint
 
 // Symbol
 
@@ -63,3 +65,4 @@ const id = Symbol('some new symbol');
 userN[id] = 100;
 console.log(userN[id]);
 console.log(userN);
+console.log(typeof id); // symbol
