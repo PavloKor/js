@@ -34,7 +34,7 @@ const user = {
   age: 27,
   gender: 'male'
 };
-console.log(user);
+console.log(user); 
 
 // можна додавати до об'єкту властивості інакше
 const user2 = {};
