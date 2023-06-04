@@ -57,3 +57,14 @@ do {
   console.log(subs[i])
 } while(i > 0)
 */
+
+
+/* написати функцію, яка приймає масив чисел і підносить до квдрату кожне з них
+*/
+const array = [2, 4, 5, 6, 10, 15, 25];
+function squareArr(arr) {
+  for (const key in arr) {
+    console.log(arr[key] * 2);
+  }
+};
+squareArr(array);
