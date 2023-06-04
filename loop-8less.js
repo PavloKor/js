@@ -8,12 +8,13 @@ JS Loops
 - do while
 */
 
-const subs = [ 
+/*const subs = [ 
   { name: 'Pavlo', isClosedFriend: true },
   { name: 'Bob', isClosedFriend: true },
   { name: 'Peter', isClosedFriend: true },
   {name: 'Max', isClosedFriend: false}
 ]
+*/
 
 // for
 /*
@@ -61,6 +62,10 @@ do {
 
 /* написати функцію, яка приймає масив чисел і підносить до квдрату кожне з них
 */
+
+//мій розв'язок
+
+/*
 const array = [2, 4, 5, 6, 10, 15, 25];
 function squareArr(arr) {
   for (const key in arr) {
@@ -68,3 +73,17 @@ function squareArr(arr) {
   }
 };
 squareArr(array);
+*/
+
+// По людськи через for of
+
+/*
+function num(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] *= arr[i]
+  }
+  return arr;
+}
+const numbers = [2, 4, 6, 8, 10, 12];
+console.log(num(numbers))
+*/
