@@ -41,3 +41,4 @@ console.log(summ(2, 3));
 const summ2 = (a, b) => a + b;
 console.log(summ2(2, 3));
 */
+
