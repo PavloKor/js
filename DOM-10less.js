@@ -70,6 +70,7 @@ btn2.addEventListener('click', function () {
 */
 /// приклади з коментарів
 
+/*
 let btnShowing = document.getElementById('btn-hap');
 let btnRemoving = document.getElementById('btn-sad');
 let imgFall = document.querySelector('.img');
@@ -85,5 +86,21 @@ function createEventForBtn(image, ShowingButton, RemovingButton) {
         RemovingButton.disabled = true;
     })
 }
-
 createEventForBtn(imgFall, btnShowing, btnRemoving);
+*/
+
+const picture = document.querySelector('.img');
+const btn1 = document.getElementById('btn-hap');
+const btn2 = document.getElementById('btn-sad');
+const showImage = function () {
+  picture.style.display = 'inline';
+  btn1.disabled = true;
+  btn2.disabled = false;
+}
+const unShowImage = function () {
+  picture.style.display = 'none';
+  btn1.disabled = false;
+  btn2.disabled = true;
+}
+btn1.addEventListener('click', showImage);
+btn2.addEventListener('click', unShowImage);
