@@ -68,4 +68,22 @@ btn2.addEventListener('click', function () {
   btn2.disabled = true;
 });
 */
+/// приклади з коментарів
 
+let btnShowing = document.getElementById('btn-hap');
+let btnRemoving = document.getElementById('btn-sad');
+let imgFall = document.querySelector('.img');
+function createEventForBtn(image, ShowingButton, RemovingButton) {
+    ShowingButton.addEventListener("click", function () {
+        image.style.display = 'inline';
+        ShowingButton.disabled = true;
+        RemovingButton.disabled = false;
+    });
+    RemovingButton.addEventListener('click', function () {
+        image.style.display = 'none';
+        ShowingButton.disabled = false;
+        RemovingButton.disabled = true;
+    })
+}
+
+createEventForBtn(imgFall, btnShowing, btnRemoving);
