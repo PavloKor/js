@@ -78,3 +78,60 @@ const deartUsers = users.map(function (item) {
 });
 console.log(deartUsers);
 */
+
+////////////////////////////////// Метод reduce
+// Ми хочемо отримати данні про середній вік на аудиторіі сайту
+/*
+const ageUsers = users.reduce(function (accumulator, currentValue) {
+  let age = accumulator + currentValue.age;
+  return age;
+}, 0);
+let usLength = users.length;
+let usersAge = ageUsers / usLength;
+// нуль це точка відліку з якої почнеться розрахунок
+console.log(ageUsers);
+console.log(usersAge);
+*/
+////////////////////////////////// Метод find
+// Повертає одне єдине унікальне значення
+/*
+const foundObj = users.find(function (item) {
+  return item.age > 18;
+}
+);
+console.log(foundObj);
+*/
+////////////////////////////////// Метод some
+// перевіряє чи хоча б один проходить перевірку
+// повертає true абр false
+
+/*
+const foundObj = users.some(function (item) {
+  return item.age > 18;
+}
+);
+console.log(foundObj);
+*/
+
+///////////////////////////////// Метод every
+// Перевіряє чи кожен задоволняє перевірку і тільки тоді повертає true 
+
+/*
+const foundObj = users.every(function (item) {
+  return item.age > 18;
+}
+);
+console.log(foundObj);
+*/
+
+//////////////////////////////// Метод findIndex
+// показує індекс елемент з задовільною умовою.
+// якщо такого елементу немає в консолі буде відємне число інддексу, наприклад -1
+
+/*
+const foundObj = users.findIndex(function (item) {
+  return item.name === 'Pavlo';
+}
+);
+console.log(foundObj);
+*/
