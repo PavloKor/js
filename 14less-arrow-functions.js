@@ -41,4 +41,46 @@ console.log(summ(2, 3));
 const summ2 = (a, b) => a + b;
 console.log(summ2(2, 3));
 */
+//////////////////////////////// Псевдоаргумент
+// маємо доступ тільки до функцій створеної лише за допомогою ключовго слова function.
+// стрілкова функція не спрацює, буде помилка
+/*
+function summ(a, b) {
+  console.log(arguments);
+  return a + b;
+}
+summ(10, 5);
+*/
+
+
+const users = [
+  {
+    name: 'Pavlo',
+    age: 27,
+    sex: 'male',
+  },
+  {
+    name: 'Jesica',
+    age: 21,
+    sex: 'female',
+  },
+  {
+    name: 'Max',
+    age: 23,
+    sex: 'male',
+  },
+  {
+    name: 'Sara',
+    age: 14,
+    sex: 'female',
+  },
+  {
+    name: 'Den',
+    age: 45,
+    sex: 'male',
+  },
+];
+// приклад стрілки з методом 
+const adultUsers = users.findIndex(item => item.name = 'Pavlo');
+console.log(adultUsers);
 
