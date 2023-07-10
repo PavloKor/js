@@ -363,3 +363,19 @@ console.log(allTemps); // [14, 25, 11, 23, 17, 18] */
   console.log(allScores);
   console.log(bestScore);
   console.log(worstScore); */
+
+
+function checkForSpam(message) {
+  let result;
+  message = message.toLowerCase();
+  result = message.includes("sale") || message.includes("spam");
+  return result;
+}
+
+console.log(checkForSpam("Latest technology news"));   //  повертає false
+checkForSpam("JavaScript weekly newsletter")  //  повертає false
+console.log(checkForSpam("Get best sale offers now!"))   //  повертає true
+checkForSpam("Amazing SalE, only tonight!")   //  повертає true
+checkForSpam("Trust me, this is not a spam message")   //  повертає true
+checkForSpam("Get rid of sPaM emails. Our book in on sale!")   //  повертає true
+checkForSpam("[SPAM] How to earn fast money?")   //  повертає true
